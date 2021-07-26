@@ -116,9 +116,9 @@ module.exports = (client, message, args, cmd, prefix) => {
   } else if (cmd === "add" || cmd === "invite") {
     return message.reply(new Discord.MessageEmbed()
       .setColor(ee.color)
-      .setURL("https://discord.com/api/oauth2/authorize?client_id=761247967859965982&permissions=8&scope=bot")
+      .setURL("https://discord.com/api/oauth2/authorize?client_id=869337640477032499&permissions=8&scope=bot")
       .setTitle("❤ | Thanks for every invite!")
-      .setDescription(`[Click here to invite me, thanks](https://discord.com/api/oauth2/authorize?client_id=761247967859965982&permissions=8&scope=bot)`)
+      .setDescription(`[Click here to invite me, thanks](https://discord.com/api/oauth2/authorize?client_id=869337640477032499&permissions=8&scope=bot)`)
       .setFooter(ee.footertext, ee.footericon)
     )
     return;
