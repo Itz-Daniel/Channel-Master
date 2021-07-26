@@ -15,7 +15,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         } = message.member.voice;
         if (channel) {
           message.reply(new Discord.MessageEmbed()
-            .setTitle("<:ChannelMaster:778404076466602024> Setup Complete for Join to Create")
+            .setTitle("<:corexsettings:868979861723701259> Setup Complete for Join to Create")
             .setColor(ee.color)
             .setDescription(`Bound to Channel: \`${channel.name}\`\nPlease rejoin!`)
             .setFooter(ee.footertext, ee.footericon)
@@ -36,7 +36,7 @@ module.exports = (client, message, args, cmd, prefix) => {
           }).then(vc => {
             if (message.channel.parent) vc.setParent(message.channel.parent.id)
             message.reply(new Discord.MessageEmbed()
-              .setTitle("<:ChannelMaster:778404076466602024> Setup Complete for Join to Create")
+              .setTitle("<:corexsettings:868979861723701259> Setup Complete for Join to Create")
               .setColor(ee.color)
               .setDescription(`Bound to Channel: \`${vc.name}\`\n\nI created the Channel for you!`)
               .setFooter(ee.footertext, ee.footericon)
@@ -53,7 +53,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         if (args[0].length > 32) return message.reply(new Discord.MessageEmbed().setColor(ee.color).setFooter(ee.footertext, ee.footericon).setTitle(":x: Your provided Channel Name is too Long").setDescription(`The maximum length for a Channel name is \`32\` Letters`));
         client.settings.set(message.guild.id, args.join(" "), "channelname");
         message.reply(new Discord.MessageEmbed()
-          .setTitle("<:ChannelMaster:778404076466602024> Successfully changed the Channelname for the temp. Channels")
+          .setTitle("<:corexsettings:868979861723701259> Successfully changed the Channelname for the temp. Channels")
           .setColor(ee.color)
           .setDescription(`New Channelname: \`${client.settings.get(message.guild.id, "channelname")}\`\n\nWhat it could look like: \`${client.settings.get(message.guild.id, "channelname").replace("{user}", message.author.username)}\``)
           .setFooter(ee.footertext, ee.footericon)
@@ -67,7 +67,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         } = message.member.voice;
         if (channel) {
           message.reply(new Discord.MessageEmbed()
-            .setTitle("<:ChannelMaster:778404076466602024> Setup 2 Complete for Join to Create")
+            .setTitle("<:corexsettings:868979861723701259> Setup 2 Complete for Join to Create")
             .setColor(ee.color)
             .setDescription(`Bound to Channel: \`${channel.name}\`\nPlease rejoin!`)
             .setFooter(ee.footertext, ee.footericon)
@@ -88,7 +88,7 @@ module.exports = (client, message, args, cmd, prefix) => {
           }).then(vc => {
             if (message.channel.parent) vc.setParent(message.channel.parent.id)
             message.reply(new Discord.MessageEmbed()
-              .setTitle("<:ChannelMaster:778404076466602024> Setup 2 Complete for Join to Create")
+              .setTitle("<:corexsettings:868979861723701259> Setup 2 Complete for Join to Create")
               .setColor(ee.color)
               .setDescription(`Bound to Channel: \`${vc.name}\`\n\nI created the Channel for you!`)
               .setFooter(ee.footertext, ee.footericon)
@@ -105,7 +105,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         if (args[0].length > 32) return message.reply(new Discord.MessageEmbed().setColor(ee.color).setFooter(ee.footertext, ee.footericon).setTitle(":x: Your provided Channel Name is too Long").setDescription(`The maximum length for a Channel name is \`32\` Letters`));
         client.settings2.set(message.guild.id, args.join(" "), "channelname");
         message.reply(new Discord.MessageEmbed()
-          .setTitle("<:ChannelMaster:778404076466602024> Successfully changed the Channelname for the temp. Channels")
+          .setTitle("<:corexsettings:868979861723701259> Successfully changed the Channelname for the temp. Channels")
           .setColor(ee.color)
           .setDescription(`New Channelname: \`${client.settings2.get(message.guild.id, "channelname")}\`\n\nWhat it could look like: \`${client.settings2.get(message.guild.id, "channelname").replace("{user}", message.author.username)}\``)
           .setFooter(ee.footertext, ee.footericon)
@@ -118,7 +118,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         } = message.member.voice;
         if (channel) {
           message.reply(new Discord.MessageEmbed()
-            .setTitle("<:ChannelMaster:778404076466602024> Setup 3 Complete for Join to Create")
+            .setTitle("<:corexsettings:868979861723701259> Setup 3 Complete for Join to Create")
             .setColor(ee.color)
             .setDescription(`Bound to Channel: \`${channel.name}\`\nPlease rejoin!`)
             .setFooter(ee.footertext, ee.footericon)
@@ -139,7 +139,7 @@ module.exports = (client, message, args, cmd, prefix) => {
           }).then(vc => {
             if (message.channel.parent) vc.setParent(message.channel.parent.id)
             message.reply(new Discord.MessageEmbed()
-              .setTitle("<:ChannelMaster:778404076466602024> Setup 3 Complete for Join to Create")
+              .setTitle("<:corexsettings:868979861723701259> Setup 3 Complete for Join to Create")
               .setColor(ee.color)
               .setDescription(`Bound to Channel: \`${vc.name}\`\n\nI created the Channel for you!`)
               .setFooter(ee.footertext, ee.footericon)
@@ -156,7 +156,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         if (args[0].length > 32) return message.reply(new Discord.MessageEmbed().setColor(ee.color).setFooter(ee.footertext, ee.footericon).setTitle(":x: Your provided Channel Name is too Long").setDescription(`The maximum length for a Channel name is \`32\` Letters`));
         client.settings3.set(message.guild.id, args.join(" "), "channelname");
         message.reply(new Discord.MessageEmbed()
-          .setTitle("<:ChannelMaster:778404076466602024> Successfully changed the Channelname for the temp. Channels")
+          .setTitle("<:corexsettings:868979861723701259> Successfully changed the Channelname for the temp. Channels")
           .setColor(ee.color)
           .setDescription(`New Channelname: \`${client.settings3.get(message.guild.id, "channelname")}\`\n\nWhat it could look like: \`${client.settings3.get(message.guild.id, "channelname").replace("{user}", message.author.username)}\``)
           .setFooter(ee.footertext, ee.footericon)
